@@ -5,7 +5,7 @@ function myFunction() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const correctCode = "sinterklaas"; // Hier kun je je eigen passcode instellen
+    const correctCode = "Billen"; // Hier kun je je eigen passcode instellen
     const input = document.getElementById("passcode");
     const button = document.getElementById("submit-code");
     const feedback = document.getElementById("feedback");

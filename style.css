@@ -62,17 +62,14 @@ a {
     margin: 1.5rem 0 1rem 0;
 }
 
-.sinterklaas {
-    font-family: "Brush Script MT", cursive;
-    font-size: clamp(1rem, 5vw, 2rem); /* past automatisch tussen 2rem en 4rem */
-    line-height: 1.2;
-}	
 
 .home {
     font-family: "Brush Script MT", cursive;
-    font-size: clamp(1rem, 5vw, 2rem); /* past automatisch tussen 2rem en 4rem */
+    font-size: clamp(0.8rem, 2.5vw, 1.4rem); /* kleiner */
     line-height: 1.2;
-    text-align: left;
+    text-align: left;     /* tekst gewoon links */
+    width: fit-content;   /* maakt het blok zo breed als de tekst */
+    margin: 0 auto;       /* centreert het blok in het midden van de pagina */
 }
 
 .nul {

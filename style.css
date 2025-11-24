@@ -65,7 +65,7 @@ a {
 
 .home {
     font-family: "Brush Script MT", cursive;
-    font-size: clamp(1rem, 2.5vw, 2rem); /* kleiner */
+    font-size: clamp(1.4rem, 2.5vw, 2rem); /* kleiner */
     line-height: 1.2;
     text-align: left;     /* tekst gewoon links */
     width: fit-content;   /* maakt het blok zo breed als de tekst */

@@ -27,50 +27,44 @@
   <h1>Opdracht 1</h1>
 
   <!-- Afbeelding -->
-  <img src="images/Sint & Piet FM.png" alt="foto sinterklaas" class="main-image">
+  <img src="images/Sinterklaas schoorsteen.jpg" alt="foto sinterklaas" class="main-image">
 
- <!-- tekst -->
-    <section class="tekst">
-      <h2 class="kop">Sinterklaas & Piet FM</h2>
-      <section class="home">
-        <p class="nul">Lieve Loekie, </p>
-        <p class="enter"></p>
-        <p class="nul">Ik vind het altijd zo leuk op bezoek in Purmerend.</p>
-        <p class="nul">Maar jij want nu in Utrecht dat is welbekend.</p>
-        <p class="nul">Als ik het zo hoor van Piet gaat het goed met jou.</p>
-        <p class="nul">En met die kamer ben je zo trots als een pauw.</p>
-        <p class="enter"></p>
-        <p class="nul">Oké je zit natuurlijk midden in de eerste opdracht.</p>
-        <p class="nul">Het is waarschijnlijk helemaal niet wat je verwacht.</p>
-        <p class="nul">Luister goed en houd je oren goed open.</p>
-        <p class="nul">Je wilt natuurlijk niet dat we langs je huisje lopen.</p>
-        <p class="enter"></p>      
-        <p class="nul">luister maar naar Sinterklaas & Piet FM.</p>
-        <p class="nul">Voordat ik helemaal terug naar spanje zwem.</p>
-        <p class="nul">Het geeft je als het goed is een code door.</p>
-        <p class="nul">Lees bron 1 goed voor dat ik het overhoor.</p>
-        <p class="enter"></p>
-        <p class="nul">liefs,</p>
-        <p class="enter"></p>
-        <p class="nul">Sinterklaas</p>
-      </section>
-      <p class="enter"></p>
-      <p class="nul">Bron 1:</p>
-      <!-- Afbeelding -->
-      <img src="images/ABC.png" alt="A = 1 B = 2..." class="main-image">
-    </section>
-    
-
- <!--wachtwoord-->
-  <section class="passcode-section">
-    <label for="passcode">Voer de code in:</label>
-    <input type="password" id="passcode" placeholder="XXXXXXXXXXX">
-    <br>
-    <button id="submit-code">Verstuur</button>
-    <p id="feedback"></p>
-
-    <button class="hint" onclick="myFunction()">Hint</button>
+  <!-- Tekst -->
+  <section class="tekst">
+      <h2 class="kop">Titel</h2>
+      <p class="sinterklaas">Gedicht waar moet je zoeken?</p>
   </section>
+
+
+
+<section class="passcode-section">
+  <!-- Display -->
+  <div class="display">
+    <div id="typedNumbers" class="typed">----</div>
+  </div>
+
+  <!-- Keypad -->
+  <div class="keypad">
+    <button class="key" data-key="1">1</button>
+    <button class="key" data-key="2">2</button>
+    <button class="key" data-key="3">3</button>
+    <button class="key" data-key="4">4</button>
+    <button class="key" data-key="5">5</button>
+    <button class="key" data-key="6">6</button>
+    <button class="key" data-key="7">7</button>
+    <button class="key" data-key="8">8</button>
+    <button class="key" data-key="9">9</button>
+    <button class="key small" id="clear">Weg</button>
+    <button class="key" data-key="0">0</button>
+    <button class="key small" id="enter">Enter</button>
+  </div>
+
+  <!-- Feedback -->
+  <div id="feedback" class="feedback"></div>
+
+  <button class="hint" onclick="myFunction()">Hint</button>
+</section>
+
 
   <script src="script1.js"></script>
 </body>

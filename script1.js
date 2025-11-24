@@ -1,35 +1,51 @@
-// script1.js
+// script2.js
 
 function myFunction() {
-    alert("je moet naar de auto en daar een mp3 luisteren");
+    alert("gebruik de spiegel om acher de schoorsteen te kijken");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const correctCode = "Sinterklaas"; // Hier kun je je eigen passcode instellen
-    const input = document.getElementById("passcode");
-    const button = document.getElementById("submit-code");
-    const feedback = document.getElementById("feedback");
+const typedNumbers = document.getElementById('typedNumbers');
+const feedback = document.getElementById('feedback');
+const keys = document.querySelectorAll('.key');
+const clearBtn = document.getElementById('clear');
+const enterBtn = document.getElementById('enter');
 
-    button.addEventListener("click", () => {
-        const enteredCode = input.value.trim();
+let code = '';
+const correctCode = '8694';
 
-        if(enteredCode === correctCode) {
-            feedback.style.color = "green";
-            feedback.textContent = "🎉 goedzo op naar het volgende level!";
-            setTimeout(() => {
-                window.location.href = "opdracht2.html";
-            }, 1000);
-        } else {
-            feedback.style.color = "red";
-            feedback.textContent = "❌ Foute code! Probeer opnieuw.";
-            input.value = "";
-        }
+function updateDisplay() {
+  typedNumbers.textContent = code.padEnd(4, '-');
+}
+
+keys.forEach(btn => {
+  const val = btn.dataset.key;
+  if (val) {
+    btn.addEventListener('click', () => {
+      if (code.length < 4) {
+        code += val;
+        updateDisplay();
+      }
     });
-
-    // Enter toets functie
-    input.addEventListener("keypress", (e) => {
-        if(e.key === "Enter") {
-            button.click();
-        }
-    });
+  }
 });
+
+clearBtn.addEventListener('click', () => {
+  code = '';
+  feedback.textContent = '';
+  updateDisplay();
+});
+
+enterBtn.addEventListener('click', () => {
+  if (code === correctCode) {
+    feedback.innerHTML = '<div class=\"success\">🎉 goedzo op naar het volgende level!</div>';
+    setTimeout(() => {
+      window.location.href = 'opdracht2.html';
+    }, 1500);
+  } else {
+    feedback.innerHTML = '<div class=\"error\">❌ Foute code! Probeer opnieuw.</div>';
+  }
+  code = '';
+  updateDisplay();
+});
+
+updateDisplay();

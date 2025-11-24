@@ -1,7 +1,7 @@
-// script2.js
+// script1.js
 
 function myFunction() {
-    alert("gebruik de spiegel om acher de schoorsteen te kijken");
+    alert("De volgorde is frans, duits, engels. Tel het aantal letters op en zet het achter elkaar. Dit geeft de code!!");
 }
 
 const typedNumbers = document.getElementById('typedNumbers');
@@ -11,7 +11,7 @@ const clearBtn = document.getElementById('clear');
 const enterBtn = document.getElementById('enter');
 
 let code = '';
-const correctCode = '8694';
+const correctCode = '9145';
 
 function updateDisplay() {
   typedNumbers.textContent = code.padEnd(4, '-');

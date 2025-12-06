@@ -1,11 +1,11 @@
 // script1.js
 
 function myFunction() {
-    alert("Zet de radio aan en zoek naar Sint & Piet FM. De eerste letter is een hoofdletter de rest zijn kleine letters.");
+    alert("Zet de radio aan en zoek naar Sint & Piet FM. Dit geeft de code!");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const correctCode = "Pepernoot"; // Hier kun je je eigen passcode instellen
+    const correctCode = "pepernoot"; // Hier kun je je eigen passcode instellen
     const input = document.getElementById("passcode");
     const button = document.getElementById("submit-code");
     const feedback = document.getElementById("feedback");

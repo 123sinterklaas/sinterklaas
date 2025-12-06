@@ -11,7 +11,7 @@ const clearBtn = document.getElementById('clear');
 const enterBtn = document.getElementById('enter');
 
 let code = '';
-const correctCode = '9145';
+const correctCode = '10165';
 
 function updateDisplay() {
   typedNumbers.textContent = code.padEnd(4, '-');

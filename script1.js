@@ -14,14 +14,14 @@ let code = '';
 const correctCode = '10165';
 
 function updateDisplay() {
-  typedNumbers.textContent = code.padEnd(4, '-');
+  typedNumbers.textContent = code.padEnd(5, '-');
 }
 
 keys.forEach(btn => {
   const val = btn.dataset.key;
   if (val) {
     btn.addEventListener('click', () => {
-      if (code.length < 4) {
+      if (code.length < 5) {
         code += val;
         updateDisplay();
       }
